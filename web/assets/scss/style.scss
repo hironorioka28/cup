@@ -1,6 +1,6 @@
 @import "compass";
 
-@import "tumblrDefault";
+//@import "tumblrDefault";
 
 .the-posts .posts-holder article .article-content h2 {
     display: none;
@@ -66,6 +66,8 @@
                 .locateImg {
                     height: 180px;
                     background: #ddd;
+                    background-size: cover;
+                    background-position: center;
                 }
             }
         }

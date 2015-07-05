@@ -30,8 +30,7 @@
 <p>Tokyo Office</p>
 <p>Adress</p>
 </div><!-- /.locateDescription -->
-<div class="locateImg">
-<img src="">
+<div class="locateImg" style="background-image:url(https://40.media.tumblr.com/cebd2bfb1db86d347fcec44dbef24938/tumblr_inline_nr0i2mievL1tw9pum_500.jpg)">
 </div><!-- /.locateImg -->
 </li>
 <li>
@@ -39,8 +38,7 @@
 <p>Oyama Office</p>
 <p>Adress</p>
 </div><!-- /.locateDescription -->
-<div class="locateImg">
-<img src="">
+<div class="locateImg" style="background-image:url(https://40.media.tumblr.com/cebd2bfb1db86d347fcec44dbef24938/tumblr_inline_nr0i2mievL1tw9pum_500.jpg)">
 </div><!-- /.locateImg -->
 </li>
 <li>
@@ -48,8 +46,7 @@
 <p>Ueda Office</p>
 <p>Adress</p>
 </div><!-- /.locateDescription -->
-<div class="locateImg">
-<img src="">
+<div class="locateImg" style="background-image:url(https://40.media.tumblr.com/cebd2bfb1db86d347fcec44dbef24938/tumblr_inline_nr0i2mievL1tw9pum_500.jpg)">
 </div><!-- /.locateImg -->
 </li>
 </ul>
