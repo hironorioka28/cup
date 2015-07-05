@@ -1,5 +1,73 @@
 @import "compass";
 
-h1 {
-    color: #777;
+@import "tumblrDefault";
+
+.the-posts .posts-holder article .article-content h2 {
+    display: none;
+}
+
+.about,
+.contact {
+    p {
+        margin: 0;
+    }
+    @include pie-clearfix;
+    .companyInfo {
+        float: left;
+        .dl {
+            .dt {
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+            .dd {
+                font-size: 9px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.about {
+    .companyImg {
+        float: right;
+        .imgWrap {
+            width: 480px;
+            height: 320px;
+            background: #ddd;
+            overflow: hidden;
+        }
+    }
+}
+
+.contact {
+    .officeLocation {
+        float: right;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            li {
+                @include pie-clearfix;
+                .locateDescription,
+                .locateImg {
+                    float: left;
+                    width: 240px;
+                }
+                .locateDescription {
+                    p {
+                        &:first-of-type {
+                            font-size: 12px;
+                        }
+                        &:last-of-type {
+                            font-size: 10px;
+                            color: #999;
+                        }
+                    }
+                }
+                .locateImg {
+                    height: 180px;
+                    background: #ddd;
+                }
+            }
+        }
+    }
 }
