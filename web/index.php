@@ -1,24 +1,37 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<link rel="stylesheet" href="http://static.tumblr.com/wdg4six/SLGn2kwl9/bakedpixel-icons.css">
-<link rel="stylesheet" href="http://static.tumblr.com/wdg4six/Y0wn2gegv/rightbox.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="http://assets.tumblr.com/fonts/garamondclassicfs/stylesheet.css?v=3">
 </head>
 <body>
 <? include 'header.php'; ?>
 <section>
-<h1>Cupworks</h1>
-<nav>
-<ul>
-<li><a href="top.php">Top</a></li>
-<li><a href="projects.php">Projects</a></li>
-<li><a href="news.php">News</a></li>
-<li><a href="about.php">About</a></li>
-<li><a href="contact.php">Contact</a></li>
-</ul>
-</nav>
+  <h1>Test</h1>
+  <div class="imgWrapper">
+    <figure><img src="assets/img/kawa.jpg"></figure>
+    <figure><img src="assets/img/kinoko.jpg"></figure>
+    <figure><img src="assets/img/sawa.jpg"></figure>
+    <figure><img src="assets/img/taki.jpg"></figure>
+  </div><!-- /.imgWrapper -->
+</section>
+
+<section>
+  <h1>Carousel</h1>
+  <div id="carousel" class="carouselWrapper">
+    <div class="prevNextWrapper">
+      <button type="button" class="prev">prev</button>
+    </div><!-- /.prevNextWrapper -->
+    <ul>
+      <li class="current" style="background-image:url(assets/img/kawa.jpg)"></li>
+      <li style="background-image:url(assets/img/kinoko.jpg)"></li>
+      <li style="background-image:url(assets/img/sawa.jpg)"></li>
+      <li style="background-image:url(assets/img/taki.jpg)"></li>
+      <li style="background-image:url(assets/img/inu.jpg)"></li>
+    </ul>
+    <div class="prevNextWrapper">
+      <button type="button" class="next">next</button>
+    </div><!-- /.prevNextWrapper -->
+  </div><!-- /.carouselWrapper -->
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>

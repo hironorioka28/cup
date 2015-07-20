@@ -1,74 +1,90 @@
 @import "compass";
 
-//@import "tumblrDefault";
-
-.the-posts .posts-holder article .article-content h2 {
-    display: none;
+img {
+    vertical-align: bottom;
 }
 
-.about,
-.contact {
-    p {
-        margin: 0;
-    }
+.imgWrapper {
     @include pie-clearfix;
-    .companyInfo {
+    figure {
         float: left;
-        .dl {
-            .dt {
-                font-size: 12px;
-                margin-bottom: 8px;
-            }
-            .dd {
-                font-size: 9px;
-                margin-bottom: 12px;
-            }
+        height: 300px;
+        margin: 0;
+        img {
+            height: 100%;
         }
     }
 }
 
-.about {
-    .companyImg {
-        float: right;
-        .imgWrap {
-            width: 480px;
-            height: 320px;
-            background: #ddd;
-            overflow: hidden;
+.carouselWrapper {
+    width: 810px;
+    height: 540px;
+    margin: 0 auto;
+    position: relative;
+    ul, li {
+        margin: 0;
+        padding: 0;
+        width: inherit;
+        height: inherit;
+    }
+    ul {
+        list-style-type: none;
+        li {
+            background-size: cover;
+            display: none;
         }
     }
-}
-
-.contact {
-    .officeLocation {
-        float: right;
-        ul {
-            list-style-type: none;
+    .prevNextWrapper {
+        position: absolute;
+        top: 0;
+        height: inherit;
+        &:first-of-type {
+            left: 0;
+            button {
+                background: linear-gradient(90deg, rgba(0, 0, 0, .4), transparent);
+                &::after {
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    left: 40%;
+                }
+            }
+        }
+        &:last-of-type {
+            right: 0;
+            button {
+                background: linear-gradient(-90deg, rgba(0, 0, 0, .4), transparent);
+                &::after {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                    right: 40%;
+                }
+            }
+        }
+        button {
             margin: 0;
-            li {
-                @include pie-clearfix;
-                .locateDescription,
-                .locateImg {
-                    float: left;
-                    width: 240px;
-                }
-                .locateDescription {
-                    p {
-                        &:first-of-type {
-                            font-size: 12px;
-                        }
-                        &:last-of-type {
-                            font-size: 10px;
-                            color: #999;
-                        }
-                    }
-                }
-                .locateImg {
-                    height: 180px;
-                    background: #ddd;
-                    background-size: cover;
-                    background-position: center;
-                }
+            padding: 0;
+            display: block;
+            border: none;
+
+            -webkit-transition: background .2s linear;
+            height: 100%;
+            width: 40px;
+            cursor: pointer;
+            position: relative;
+            text-indent: -9999px;
+            &:hover {
+                background: rgba(255, 255, 255, .2);
+                -webkit-transition: background .1s linear;
+            }
+            &::after {
+                display: block;
+                content: "";
+                position: absolute;
+                border-top: 4px solid #fff;
+                border-left: 4px solid #fff;
+                border-radius: 2px;
+                width: 16px;
+                height: 16px;
             }
         }
     }
