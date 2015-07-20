@@ -5,22 +5,8 @@
 </head>
 <body>
 <? include 'header.php'; ?>
-<section>
-  <h1>Test</h1>
-  <div class="imgWrapper">
-    <figure><img src="assets/img/kawa.jpg"></figure>
-    <figure><img src="assets/img/kinoko.jpg"></figure>
-    <figure><img src="assets/img/sawa.jpg"></figure>
-    <figure><img src="assets/img/taki.jpg"></figure>
-  </div><!-- /.imgWrapper -->
-</section>
 
-<section>
-  <h1>Carousel</h1>
-  <div id="testButton">
-    <button type="button" class="start">開始</button>
-    <button type="button" class="stop">停止</button>
-  <div><!-- /#testButton  -->
+<section class="cupWorksCarousel">
   <div id="carousel" class="carouselWrapper">
     <div class="prevNextWrapper">
       <button type="button" class="prev">prev</button>
@@ -67,6 +53,11 @@
       </ul>
     </div><!-- /#thumbnail -->
   </div><!-- /#carousel -->
+</section>
+
+<section>
+  <ul id="tumblrApi">
+  </ul>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>

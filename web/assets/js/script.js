@@ -1,4 +1,6 @@
 (function($) {
+    $("#carousel").height($(".mainImg li").height());
+
     var counter = 0,
         timer;
 
@@ -11,16 +13,6 @@
     $("#carousel .prev").on("click", function() {
         stopTimer();
         slideShow(true);
-    });
-
-    $("#testButton .start").on("click", function() {
-        console.log("start");
-        startTimer();
-    });
-
-    $("#testButton .stop").on("click", function() {
-        console.log("stop");
-        stopTimer();
     });
 
     $("#thumbnail button").on("click", function() {
@@ -63,5 +55,5 @@
         $("#carousel .mainImg li").eq(counter).addClass("current");
         $("#carousel .thumbnail li").eq(counter).addClass("current");
     }
-
 })(jQuery);
+
