@@ -83,27 +83,152 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="/assets/css/customStyle.css">
 <style type="text/css">
+/* Color Style */
+body {
+  background: #ffffff;
+  color: #333333;
+}
+
+.timeago a,
+.group-author a {
+  color: #333333;
+}
+
+.blogtitle h1 {
+  color: #333333;
+}
+
+.menutype_dropdown .menu-toggle {
+  color: #aaaaaa;
+}
+.menutype_dropdown .menu-toggle .menu-toggle-hamburger {
+  border-color: #aaaaaa;
+}
+.menutype_dropdown .menu-toggle .menu-toggle-hamburger:before,
+.menutype_dropdown .menu-toggle .menu-toggle-hamburger:after {
+  background: #aaaaaa;
+}
+.menutype_dropdown .menu-toggle:hover,
+.menutype_dropdown .menu-toggle.on {
+  color: #aaaaaa;
+}
+.menutype_dropdown .menu-toggle:hover .icon-menu,
+.menutype_dropdown.on .menu-toggle .icon-menu {
+  color: #333333!important;
+}
+.menutype_dropdown nav {
+  background: #333333;
+}
+.menutype_dropdown nav:after {
+  border-bottom-color: #333333;
+}
+.menutype_dropdown nav ul li a {
+  color: #ffffff;
+}
+.menutype_dropdown nav ul li a:hover {
+  background: #5a5a5a;
+  color: #ffffff;
+}
+.menutype_dropdown nav input {
+  background: #333333;
+  color: #ffffff;
+}
+.menutype_dropdown nav input:focus {
+  background: #5a5a5a;
+  color: #ffffff;
+}
+footer .type_pagination.pagination_load-more .load-more,
+footer .type_pagination .scroll-top,
+footer .type_pagination .pagination a,
+footer .post-nav a {
+  color: #aaaaaa;
+}
+footer .type_pagination .load-more:hover,
+footer .type_pagination .scroll-top:hover,
+footer .type_pagination .pagination a:hover,
+footer .post-nav a:hover {
+  color: #aaaaaa;
+}
+@media only screen and (min-width: 768px) {
+  footer .type_pagination .load-more:hover,
+  footer .type_pagination .scroll-top:hover,
+  footer .type_pagination .pagination a:hover,
+  footer .post-nav a:hover {
+    color: #333333;
+  }
+}
+.social-menu li a {
+  color: #b5b5b5;
+}
+.social-menu li a:hover {
+  color: #333333;
+}
+h1, h2, h3, h4, h5, article.type_quote .quote {
+  color: #333333;
+}
+a {
+  color: #999999;
+}
+a:hover {
+  color: #333333;
+}
+article h2 a {
+  color: #333333;
+}
+article h2 a:hover {
+  opacity: 0.5;
+}
+article .article-content .icons li,
+article blockquote,
+article.type_chat .line{
+  border-color: #f1f1f1;
+}
+article.type_answer hr {
+  background: #f1f1f1;
+}
+article.type_link .the-link {
+  background: #999999;
+  color: #ffffff;
+}
+article.type_link .the-link:hover {
+  background: #333333;
+}
+::-moz-selection { 
+  background: #999999;
+  color: #ffffff;
+  text-shadow: none;
+}
+::selection { 
+  background: #999999;
+  color: #ffffff; 
+  text-shadow: none;
+}
 </style>
 
+<!-- IndexPage -->
 <style>
-.contentsWrapper {
-  padding: 30px 30px 24px;
+article.type_text {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 20px;
 }
-.article-content h2 {
-  font-size: 14px;
-  line-height: 1;
-  margin-bottom: 10px;
+article.type_text .article-content {
+  padding: 0;
 }
-.article-content p {
+article.type_text .article-content h2 a {
+  display: block;
+  padding: 30px 0 24px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+}
+article.type_text .article-content p {
   display: none;
 }
-.article-content figure {
-  height: 100px;
-  float: left;
-}
-.article-content figure img {
-  width: auto;
-  height: 100%;
+article.type_text figure {
+  display: none;
 }
 </style>
 
@@ -122,7 +247,7 @@
     <header class="clearfix">
       <h1 class="blogtitle">
         <a href="/" title="CUPWORKS">
-          <img src="http://static.tumblr.com/a8939a85746eedfe14281f56954bdb24/2ye9z2c/AyZnpm9ab/tumblr_static_1cr0p3xf5npcw40kwog0og8g4.png" alt="cupworks" width=160>
+          <img src="https://secure.static.tumblr.com/c1656154128fee78487919075c0a55bb/2ye9z2c/M25nst743/tumblr_static_c7qwd3zdly8gkgsss88kcwg4o.png" alt="cupworks" width="160">
         </a>
       </h1>
       <div class="menutype_horizontal">
@@ -131,10 +256,6 @@
         </div>
         <nav class="the-menu">
           <ul class="main-menu">
-            <li><a href="/#projects" title="Projects">Projects</a></li>
-            <li><a href="/#profile" title="Profile">Profile</a></li>
-            <li><a href="/#about" title="About">About</a></li>
-            <li><a href="/#contact" title="Contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -143,6 +264,14 @@
   <section id="projects" class="the-posts">
     <div class="posts-holder posts-grid">
       <div class="grid-sizer"></div>
+      <article id="126242129004" class="type_text " rel="https://www.tumblr.com/reblog/126242129004/GZELfx1A">
+        <div class="article-content">
+          <!-- Text Post -->
+          <h2><a href="http://www.cup-works.net/post/126242129004/テキスト投稿でオリジナルサイズの画像を使いたい" title="テキスト投稿でオリジナルサイズの画像を使いたい">テキスト投稿でオリジナルサイズの画像を使いたい</a></h2>
+          <figure><img src="https://farm4.staticflickr.com/3906/15310140636_8e5743f6fe_b.jpg" alt="DSC_0025_140923"></figure><p>Tumblr&#12398;&#12486;&#12461;&#12473;&#12488;&#25237;&#31295;&#12399;&#12486;&#12461;&#12473;&#12488;&#12398;&#25237;&#31295;&#12395;&#29305;&#21270;&#12375;&#12390;&#12356;&#12427;&#12398;&#12391;&#12371;&#12371;&#12363;&#12425;&#30011;&#20687;&#12434;&#12450;&#12483;&#12503;&#12377;&#12427;&#12392;500px&#12395;&#32302;&#23567;&#12373;&#12428;&#12390;&#12375;&#12414;&#12358;&#12424;&#12358;&#12384;&#12290;</p><p>&#12381;&#12428;&#12399;&#12392;&#12390;&#12418;&#20855;&#21512;&#12398;&#24746;&#12356;&#12371;&#12392;&#12394;&#12398;&#12391;flickr&#12398;&#22475;&#12417;&#36796;&#12415;&#12434;&#20351;&#12387;&#12390;&#30011;&#20687;&#12434;&#19978;&#12370;&#12390;&#12415;&#12383;&#12290;&#12393;&#12435;&#12394;&#12371;&#12392;&#12395;&#12394;&#12387;&#12383;&#12384;&#12429;&#12358;&#12363;&#12290;</p>
+          <div class="clearfix"></div>
+        </div>             
+      </article>
       <article id="124395645649" class="type_text " rel="https://www.tumblr.com/reblog/124395645649/Ib1DiqrO">
         <div class="article-content">
           <!-- Text Post -->
@@ -373,5 +502,14 @@
    }
    })(this.Tumblr || (this.Tumblr = {}));
   </script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+<script>
+  (function($) {
+    $("article.type_text").each(function() {
+      var imgUrl = $(this).find("figure:first-of-type").find("img").attr("src");
+      $(this).css("background-image", "url(" + imgUrl + ")");
+    });
+  })(jQuery);
+</script>
 </body>
 </html>

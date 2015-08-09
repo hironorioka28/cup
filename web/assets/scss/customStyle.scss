@@ -1,5 +1,6 @@
 @import "compass";
 @import "reset";
+
 /* Basic Style */
 * {
   -moz-box-sizing: border-box;
@@ -53,7 +54,6 @@ h1 {
     font-family: 'Garamond Classic FS', serif;
     display: inline-block;
     font-size: 18px;
-    float: left;
     line-height: 1.2;
     letter-spacing: -1px;
     margin-left: 0;
@@ -62,6 +62,11 @@ h1 {
       color: #333333;
       &:hover {
         opacity: 0.6;
+      }
+      img {
+        display: inline;
+        vertical-align: bottom;
+        width: 48px;
       }
     }
     @media only screen and (min-width: 768px) {
@@ -108,18 +113,15 @@ p {
 }
 #header-wrap {
   width: 100%;
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 22px;
   position: relative;
   z-index: 99999;
-  @media only screen and (min-width: 768px) {
-    padding: 0 32px;
-  }
 }
 header {
   padding: 20px 0;
   border-bottom: solid 1px #f1f1f1;
+  text-align: center;
 }
 .menutype_vertical_header header {
   padding-bottom: 22px;
@@ -643,7 +645,7 @@ footer {
 } // .social-menu
 section {
   width: 100%;
-  max-width: 998px;
+  max-width: 960px;
   margin: 0 auto;
   position: relative;
   clear: both;
@@ -701,7 +703,6 @@ article {
   float: left;
   width: 100%;
   margin: 0;
-  padding: 6px 3px 0;
   &.type_text {
     embed,
     iframe,
@@ -883,7 +884,7 @@ article {
   }
   .article-content {
     position: relative;
-    padding: 30px 20px 24px;
+    padding: 30px 0 24px;
     word-break: break-word;
     .icons {
       clear: both;
@@ -1053,9 +1054,6 @@ article {
     }
   } // .post-notes
   @media only screen and (min-width: 768px) {
-    .article-content {
-      padding: 30px 30px 24px;
-    }
     &.type_audio {
       .tumblr_audio_player,
       .soundcloud_audio_player {
@@ -1157,124 +1155,3 @@ article {
     } // article
   } // @media only screen and (min-width: 768px)
 } // .permalink
-
-/* Color Style */
-body {
-  background: #ffffff;
-  color: #333333;
-}
-
-.timeago a,
-.group-author a {
-  color: #333333;
-}
-
-.blogtitle h1 {
-  color: #333333;
-}
-
-.menutype_dropdown .menu-toggle {
-  color: #aaaaaa;
-}
-.menutype_dropdown .menu-toggle .menu-toggle-hamburger {
-  border-color: #aaaaaa;
-}
-.menutype_dropdown .menu-toggle .menu-toggle-hamburger:before,
-.menutype_dropdown .menu-toggle .menu-toggle-hamburger:after {
-  background: #aaaaaa;
-}
-.menutype_dropdown .menu-toggle:hover,
-.menutype_dropdown .menu-toggle.on {
-  color: #aaaaaa;
-}
-.menutype_dropdown .menu-toggle:hover .icon-menu,
-.menutype_dropdown.on .menu-toggle .icon-menu {
-  color: #333333!important;
-}
-.menutype_dropdown nav {
-  background: #333333;
-}
-.menutype_dropdown nav:after {
-  border-bottom-color: #333333;
-}
-.menutype_dropdown nav ul li a {
-  color: #ffffff;
-}
-.menutype_dropdown nav ul li a:hover {
-  background: #5a5a5a;
-  color: #ffffff;
-}
-.menutype_dropdown nav input {
-  background: #333333;
-  color: #ffffff;
-}
-.menutype_dropdown nav input:focus {
-  background: #5a5a5a;
-  color: #ffffff;
-}
-footer .type_pagination.pagination_load-more .load-more,
-footer .type_pagination .scroll-top,
-footer .type_pagination .pagination a,
-footer .post-nav a {
-  color: #aaaaaa;
-}
-footer .type_pagination .load-more:hover,
-footer .type_pagination .scroll-top:hover,
-footer .type_pagination .pagination a:hover,
-footer .post-nav a:hover {
-  color: #aaaaaa;
-}
-@media only screen and (min-width: 768px) {
-  footer .type_pagination .load-more:hover,
-  footer .type_pagination .scroll-top:hover,
-  footer .type_pagination .pagination a:hover,
-  footer .post-nav a:hover {
-    color: #333333;
-  }
-}
-.social-menu li a {
-  color: #b5b5b5;
-}
-.social-menu li a:hover {
-  color: #333333;
-}
-h1, h2, h3, h4, h5, article.type_quote .quote {
-  color: #333333;
-}
-a {
-  color: #999999;
-}
-a:hover {
-  color: #333333;
-}
-article h2 a {
-  color: #333333;
-}
-article h2 a:hover {
-  opacity: 0.5;
-}
-article .article-content .icons li,
-article blockquote,
-article.type_chat .line{
-  border-color: #f1f1f1;
-}
-article.type_answer hr {
-  background: #f1f1f1;
-}
-article.type_link .the-link {
-  background: #999999;
-  color: #ffffff;
-}
-article.type_link .the-link:hover {
-  background: #333333;
-}
-::-moz-selection { 
-  background: #999999;
-  color: #ffffff;
-  text-shadow: none;
-}
-::selection { 
-  background: #999999;
-  color: #ffffff; 
-  text-shadow: none;
-}
